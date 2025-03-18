@@ -117,6 +117,9 @@ endif
 if RLINK
 DRIVERFILES += %D%/rlink.c %D%/rlink_speed_table.c
 endif
+if CH347
+DRIVERFILES += %D%/ch347.c
+endif
 if ULINK
 DRIVERFILES += %D%/ulink.c
 ulinkdir = $(pkgdatadir)/OpenULINK
